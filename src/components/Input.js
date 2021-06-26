@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ListItems = ({items}) => {
+export const ListItems = ({items}) => {
     return (
         items.map((item, index) => 
             <h4 key={index}>{item}</h4> 
@@ -8,7 +8,7 @@ const ListItems = ({items}) => {
     )
   } 
   
-export default function Input({showItem}) {
+export function Input() {
     
     const [value, setValue] = useState("");
     const [items, setItems] = useState([]);
