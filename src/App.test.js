@@ -1,4 +1,3 @@
-import { render, screen } from '@testing-library/react';
 import App from './App';
 import {ListItems} from './components/Input';
 import {Input} from './components/Input';
