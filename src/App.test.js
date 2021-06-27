@@ -12,8 +12,13 @@ import { shallow, mount } from "enzyme";
 
 describe('isArray', () => {
 
-  it("renders without crashing", () => {
-    const items = "items";
+  it("renders props as object", () => {
+    let items = "items";
+    const wrapper = shallow(<Input/>);
+    expect(typeof wrapper.find(ListItems).prop(items)).toBe("object");
+  });
+  it("It fails to render prop", () => {
+    let items = "";
     const wrapper = shallow(<Input/>);
     expect(typeof wrapper.find(ListItems).prop(items)).toBe("object");
   });
