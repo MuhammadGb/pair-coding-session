@@ -17,6 +17,7 @@ describe('isArray', () => {
     const wrapper = shallow(<Input/>);
     expect(typeof wrapper.find(ListItems).prop(items)).toBe("object");
   });
+  
   it("It fails to render prop", () => {
     let items = "";
     const wrapper = shallow(<Input/>);
